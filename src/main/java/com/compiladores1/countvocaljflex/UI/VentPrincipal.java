@@ -171,9 +171,9 @@ public class VentPrincipal extends javax.swing.JFrame {
             while (ouput != CounterLexer.YYEOF) {
                 lexer.yylex();
             }
-            String texto = "palabras con 1 Vocal " + lexer.getContador1() + "\nPalabras con 2 Vocales " + lexer.getContador2()
-                    + "\nPalabras con 3 Vocales" + lexer.getContador3() + "\nPalabras con 4 Vocales " + lexer.getContador4() + "\nPalabras con 5 Vocales " + lexer.getContador5()
-                    + "\nPalabras con mas de 5 Vocales " + lexer.getContadorMayor();
+            String texto = "palabras con 1 Vocal: " + lexer.getContador1() + "\nPalabras con 2 Vocales: " + lexer.getContador2()
+                    + "\nPalabras con 3 Vocales: " + lexer.getContador3() + "\nPalabras con 4 Vocales: " + lexer.getContador4() + "\nPalabras con 5 Vocales: " + lexer.getContador5()
+                    + "\nPalabras con mas de 5 Vocales: " + lexer.getContadorMayor();
             this.tokensEnteros = (ArrayList<TokenPos>) lexer.getTokensEnteros();
             for (TokenPos tokensEntero : tokensEnteros) {
                 texto += "\n" + tokensEntero.toString();
